@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-4</h1>
+    <h2>Q4: 
+        Write a JavaScript program where the program takes a random integer <br>
+between 1 and 10, and the user is then prompted to input a guess <br>
+number. The program displays a message "Good Work" if the input <br>
+matches the guess number otherwise "Not matched". <br>
+    </h2> 
+
+    <script>
+     var input = prompt("Guess number between 1 to 10 :")
+     var random = Math.floor(Math.random()*10+1)
+
+     // condition
+     if (input == random) {
+        document.write(`<h1 class="ans"> "Good Work"`)
+     }else{
+        document.write(`<h1 class="ans"> "Not matched"`)
+            console.log(random);  
+     }
+     console.log(random);
+        
+        
+        
+    </script>
+</body>
+</html>
